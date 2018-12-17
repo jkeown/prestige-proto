@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Photobooth & Labs - Prestige - Orange County CA</title>
+  <meta name="description" content="Prestige Photobooth & Lab. Offering Photobooth and Film Processing Services. ">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+  <style>
+    :root {
+      --black: #080401;
+      --black-opaque: rgba(4, 8, 1, .6);
+      --white: #fffefc;
+      --teal: #008080;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Alegreya', serif;
+      font-size: 5vw;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    main {
+      background: var(--black-opaque);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5vh;
+      align-items: center;
+    }
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .logo a:hover {
+      border-bottom: none;
+    }
+    a:hover {
+      border-bottom: 5px solid var(--teal);
+    }
+
+    .logo img {
+      max-width: 50vw;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services h2 {
+      padding: 10px;
+    }
+
+    @media (min-width:450px) {
+      .services {
+        flex-direction: row;
+      }
+
+      .logo img {
+        max-width: 40vw;
+      }
+    }
+
+    @media (min-width: 700px) {
+      body {
+        font-size: 3vw;
+      }
+
+      .logo img {
+        max-width: 30vw;
+      }
+    }
+
+    @media (min-width: 900px) {
+      body {
+        font-size: 2vw;
+      }
+
+      .logo img {
+        max-width: 25vw;
+      }
+    }
+
+    @media (min-width: 1500px) {
+      body {
+        font-size: 2vw;
+      }
+
+      .logo img {
+        max-width: 20vw;
+      }
+    }
+
+    @media (max-width: 450px) {
+      _:-ms-lang(x),
+      main {
+        margin-left: -5vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <video src="img/prestige-landing-page.mp4" type="video/mp4" preload="metadata" muted autoplay loop playsinline></video>
+  <main>
+    <div class="prestige">
+      <h1>Prestige</h1>
+    </div>
+    <div class="logo">
+      <a href="html/photobooth.html">
+        <img src="img/prestige-logo.svg" alt="Prestige Photobooth & Lab Logo">
+      </a>
+    </div>
+    <div class="services">
+      <h2 class="photobooth"><a href="html/photobooth.html">Photobooth</a></h2>
+      <h2 class="and">&</h2>
+      <h2 class="lab"><a href="html/lab.html">Lab</a></h2>
+    </div>
+  </main>
+</body>
+
+</html>
